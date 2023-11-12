@@ -1,3 +1,3 @@
 # details_of_provider
 
-A new Flutter project.
+See: https://www.youtube.com/watch?v=MIbctCfdgRQ
