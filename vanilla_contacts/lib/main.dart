@@ -21,12 +21,12 @@ class Contact {
   const Contact({required this.name});
 }
 
-class ContactBook {
-  ContactBook._();
+class ContactBook extends ValueNotifier<List<Contact>> {
+  final List<Contact> _contacts = [];
+
+  ContactBook._() : super([]);
   static final ContactBook _instance = ContactBook._();
   factory ContactBook() => _instance;
-
-  final List<Contact> _contacts = [];
 
   int get length => _contacts.length;
 
